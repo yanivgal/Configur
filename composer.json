@@ -1,0 +1,17 @@
+{
+  "name": "yanivgal/configur",
+  "description": "Abstract layer for better handling configuration files, such as ini, json, php",
+  "keywords": ["config","configur","ini", "json", "php"],
+  "homepage": "http://github.com/yanivgal/Configur",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yaniv Gal"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "yanivgal\\": "src"
+    }
+  }
+}
