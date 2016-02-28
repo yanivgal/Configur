@@ -264,6 +264,7 @@ class Configur
         $customManagerParts = explode('\\', $customManager);
         $customManagerName = end($customManagerParts);
         $customManagerName = rtrim($customManagerName, 'Manager');
+        $customManagerName = rtrim($customManagerName, 'Configur');
         $customManagerName = strtolower($customManagerName);
         return $customManagerName;
     }
