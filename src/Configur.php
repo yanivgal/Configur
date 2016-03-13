@@ -263,8 +263,8 @@ class Configur
     {
         $customManagerParts = explode('\\', $customManager);
         $customManagerName = end($customManagerParts);
-        $customManagerName = rtrim($customManagerName, 'Manager');
-        $customManagerName = rtrim($customManagerName, 'Configur');
+        $customManagerName = preg_replace('/Manager$/', '', $customManagerName);
+        $customManagerName = preg_replace('/Configur$/', '', $customManagerName);
         $customManagerName = strtolower($customManagerName);
         return $customManagerName;
     }
